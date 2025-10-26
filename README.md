@@ -38,3 +38,60 @@ Follow these instructions to get a local copy up and running.
 ```bash
 git clone https://github.com/Hemanth2709/Project-Pro.git
 cd Project-pro
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+
+### 3. Set Up Environment Variables
+
+## You'll need to connect the project to your own Supabase instance.
+
+Steps:
+
+- Create a new project on Supabase
+- Go to Project Settings > API.
+- Find your Project URL and anon public key.
+- Create a .env.local file in the root directory of your project.
+- Add your Supabase credentials to the file:
+
+NEXT_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+
+
+### 4. Set up the database schema.
+
+Use the SQL statements from your Supabase project's schema.sql, or
+
+Manually create the following tables:
+
+- projects
+- tasks
+- team_members
+- events
+- resources
+
+###  5. Run the Development Server
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+
+
+Open your browser and navigate to:
+👉 http://localhost:3000
+
+📂 Project Structure
+app/          # Next.js App Router structure (routes, pages, layouts)
+components/   # Shared React components (UI + feature components)
+contexts/     # React Context for global state management (DataContext.tsx)
+lib/          # Utility functions (including Supabase client setup)
