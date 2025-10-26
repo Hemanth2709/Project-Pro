@@ -63,8 +63,10 @@ Steps:
 - Create a .env.local file in the root directory of your project.
 - Add your Supabase credentials to the file:
 
+```
 NEXT_PUBLIC_SUPABASE_URL=YOUR_SUPABASE_URL
 NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+```
 
 
 ### 4. Set up the database schema.
@@ -80,18 +82,22 @@ Manually create the following tables:
 - resources
 
 ###  5. Run the Development Server
+
+```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
+```
 
 
 Open your browser and navigate to:
 👉 http://localhost:3000
 
-📂 Project Structure
-app/          # Next.js App Router structure (routes, pages, layouts)
-components/   # Shared React components (UI + feature components)
-contexts/     # React Context for global state management (DataContext.tsx)
-lib/          # Utility functions (including Supabase client setup)
+## 📂 Project Structure
+- `app/` – Next.js App Router structure (routes, pages, layouts)  
+- `components/` – Shared React components (UI + feature components)  
+- `contexts/` – React Context for global state management (`DataContext.tsx`)  
+- `lib/` – Utility functions (including Supabase client setup)  
+
